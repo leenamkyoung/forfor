@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -40,9 +39,7 @@ INSTALLED_APPS = [
     'fi.apps.FiConfig',
     'part.apps.PartConfig',
     'py.apps.PyConfig',
-    'rest_framework',
-    'rest_framework_swagger',
-    'debug_toolbar',
+    
 ]
 
 MIDDLEWARE = [
@@ -131,9 +128,6 @@ STATICFILES_DIRS = [
 ] #현재 스태택 파일이 어디에 있는지
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'part','static')
-]
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'portfolio','static')
 ]
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'py','static')
