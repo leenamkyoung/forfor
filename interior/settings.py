@@ -136,11 +136,6 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # 스태틱 파일들이 어디로 모일것인지 쓰는 곳 = static파일에 모와줘라
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-# 미디어로 모으는거
-
-MEDIA_URL = '/media/'
-#홈페이지이름 슬레시 어쩌구 파일에 대한 값
 
 # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
