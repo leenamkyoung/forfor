@@ -1,1 +1,1 @@
-web: gunicorn interiorproject.wsgi --log-file -
+web: gunicorn interior.wsgi --log-file -
