@@ -26,13 +26,13 @@ import py.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',fi.views.home, name="home"),
+    path('aaa',fi.views.aaa, name="aaa"),
     path('bed/', part.views.bed, name="bed"),
     path('bath/', part.views.bath, name="bath"),
     path('door/', part.views.door, name="door"),
     path('dressroom/', part.views.dressroom, name="dressroom"),
     path('kitchen/', part.views.kitchen, name="kitchen"),
     path('livingroom/', part.views.livingroom, name="livingroom"),
-    path('veranda/', part.views.veranda, name="veranda"),
     path('twenty/', py.views.twenty, name="twenty"),
     path('thirty/', py.views.thirty, name="thirty"),
     path('forty/', py.views.forty, name="forty"),
@@ -42,6 +42,5 @@ urlpatterns = [
     path('door/<int:door_id>', part.views.detail3, name="detail3"), #중문 디테일
     path('kitchen/<int:kitchen_id>', part.views.detail4, name="detail4"), #주방 디테일
     path('livingroom/<int:livingroom_id>', part.views.detail5, name="detail5"), #거실 디테일
-    path('veranda/<int:veranda_id>', part.views.detail6, name="detail6"), #베란다 디테일
 ]
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

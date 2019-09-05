@@ -21,7 +21,3 @@ class Kitchen(models.Model):
 
 class Livingroom(models.Model):
     image = models.ImageField(upload_to='images/')
-
-
-class Veranda(models.Model):
-    image = models.ImageField(upload_to='images/')

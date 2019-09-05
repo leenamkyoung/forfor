@@ -5,7 +5,7 @@ from .models import Livingroom
 from .models import Kitchen
 from .models import Door
 from .models import Dressroom
-from .models import Veranda
+
 
 def bed(request):
     bed = Bed.objects
@@ -30,11 +30,7 @@ def door(request):
 def dressroom(request):
     dressroom = Dressroom.objects
     return render(request, 'dressroom.html', {'dressrooms':dressroom})
-
-def veranda(request):
-    veranda = Veranda.objects
-    return render(request, 'veranda.html', {'verandas':veranda})
-
+    
 def detail(request, dressroom_id): #드레스룸디테일
     dressroom_detail = get_object_or_404(Dressroom, pk = dressroom_id) #이용자가 원하는 몇번블로그 객체
     return render(request, 'detail.html', {'dressroom':dressroom_detail})
@@ -58,7 +54,3 @@ def detail4(request, kitchen_id): #드레스룸디테일
 def detail5(request, livingroom_id): #드레스룸디테일
     livingroom_detail = get_object_or_404(Livingroom, pk = livingroom_id) #이용자가 원하는 몇번블로그 객체
     return render(request, 'detail5.html', {'livingroom':livingroom_detail})
-
-def detail6(request, veranda_id): #드레스룸디테일
-    veranda_detail = get_object_or_404(Veranda, pk = veranda_id) #이용자가 원하는 몇번블로그 객체
-    return render(request, 'detail6.html', {'veranda':veranda_detail})
