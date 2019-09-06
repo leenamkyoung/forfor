@@ -27,6 +27,16 @@
     font-weight: normal; 
     font-style: normal;
   }
+@font-face { font-family: 'S-CoreDream-6Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+.honest h1{
+  font-family: S-CoreDream-6Bold;
+}
+
+.honest h4{
+  font-family: S-CoreDream-3Light;
+}
 
     .text-right{
       padding-right:1.5rem;
@@ -171,8 +181,17 @@
 
     <!--open start-->
     
-<div class="main">
-  <img src="{%static '1616.png'%}" width="100%" height="420">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="{%static 'desk.jpg'%}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block" style="margin-bottom:15%; margin-top:25%;">
+          <h1 class="honest h1">BE - SATISFY</h1>
+          <br>
+          <h4 class="honest h4">고객님이 원하시는 디자인 최대한 맞춰드립니다</h4>
+        </div>
+    </div>
+  </div>
 </div>
     
     <!--open the end-->
@@ -239,8 +258,6 @@
       <img class="d-block w-100" src="{% static '거실 (2).jpg'%}" alt="First slide">
       <div class="carousel-caption">
         <h3 text-align="top">포인테리어</h3>
-        <h5>for-interior</h5>
-        <br>
         <h5>용인시 기흥구 서천동 SK아파트</h5>
         <br>
       </div>
@@ -249,8 +266,6 @@
       <img class="d-block w-100" src="{% static '신발장,현관.jpg'%}" alt="Second slide">
       <div class="carousel-caption">
         <h3 text-align="top">포인테리어</h3>
-        <h5>for-interior</h5>
-        <br>
         <h5>용인시 기흥구 서천동 SK아파트</h5>
         <br>
       </div>
@@ -259,8 +274,6 @@
       <img class="d-block w-100" src="{% static '주방 (2).jpg'%}" alt="Third slide">
       <div class="carousel-caption">
         <h3 text-align="top">포인테리어</h3>
-        <h5>for-interior</h5>
-        <br>
         <h5>용인시 기흥구 서천동 SK아파트</h5>
         <br>
       </div>
@@ -269,8 +282,6 @@
       <img class="d-block w-100" src="{% static '주방+다이닝룸.jpg'%}" alt="Third slide">
       <div class="carousel-caption">
         <h3 text-align="top">포인테리어</h3>
-        <h5>for-interior</h5>
-        <br>
         <h5>용인시 기흥구 서천동 SK아파트</h5>
         <br>
       </div>
@@ -279,8 +290,6 @@
       <img class="d-block w-100" src="{% static '작은방 (2).jpg'%}" alt="Third slide">
       <div class="carousel-caption">
         <h3 text-align="top">포인테리어</h3>
-        <h5>for-interior</h5>
-        <br>
         <h5>용인시 기흥구 서천동 SK아파트</h5>
         <br>
       </div>
