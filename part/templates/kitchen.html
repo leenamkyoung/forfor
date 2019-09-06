@@ -117,13 +117,13 @@
       opacity: 0.85;
     }
 
-    .popup{
+      .popup{
       position:fixed;
       left: 50%;
       top: 50%;
       transform:translate(-50%,-50%);
       width:35rem;
-      height:37rem;
+      height:29rem;
       box-shadow:0 0 30px rgba(0,0,0,0.5);
       background: #fff;
       border-radius:0.25rem;
@@ -142,43 +142,33 @@
     }
 
     .popup img{
-      margin:0 auto;
-      padding-top:0.25rem;
-      padding-bottom:1.1rem;
+      padding-top:0.7rem;
     }
 
-    .input_cash{
-      margin:0 auto;
-      padding-top:0.5rem;
-      width:15rem;
-      height:2rem;
-      background-color:#FD746C;
-      border-radius: 1.5rem;
-      box-shadow:0 0 0.5rem rgba(0,0,0,0.5);
-    }
+  .closebtn{
+    position:absolute;
+    bottom:3%;
+    left:48%;
+  }
 
-    .input_cash h6{
-      color:white;
-      text-decoration: none;
-      text-align: center;
-    }
-
-    .input_cash:hover{
-      background-color:#2C3E50;
-      text-decoration:none;
-    }
 
 .title{
   color:gray;
 }
 
+  .part-nav{
+  z-index:4;
+}
+.navbar-toggler{
+ z-index:4; 
+}
     </style>
 </head>
 
 <body>
 
     <!--nav시작-->
-
+<div class="part-nav">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static '로고왕.png' %}" width="115rem" height="60rem" style="margin-left:2rem;"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" ara-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -222,7 +212,7 @@
       
     </div>
   </nav>
-
+</div>
     <!--nav끝-->
     
 
@@ -323,17 +313,15 @@
 
 <!--확대됨-->
 <div class="popup" id="{{kitchen.id}}">
-  <a href="#a"><img src="{% static 'close.png' %}" height="50"></a>
-    <img src="{{ kitchen.image.url }}" width="100%" height="600px">
-    <div class="input_cash">
-      <h6>이 스타일로 견적 문의하기</h6> 
-    </div>
+  <img src="{{ kitchen.image.url }}" width="100%" height="500px">
+  <a href="#a" class="closebtn"><img src="{% static 'close.png' %}" height="50"></a>
 </div>
 {%endfor%}
 
+</div>
+</div>
 
-</div>
-</div>
+<br><br>
 
 </body>
 

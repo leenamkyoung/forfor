@@ -4,10 +4,17 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<!--어썸-->
-<script src="https://kit.fontawesome.com/a359fa4db7.js"></script>
-
  <style>
+  .footer{
+    color:white;
+    height:1rem;
+  
+
+  }
+  .footer p{
+    font-size: 0.9rem;
+ 
+  }
 
 </style>
 
@@ -15,39 +22,24 @@
 
 <body>
 
-<div class="d-flex justify-content-center">
 
-<div class="category-navigation">
-  <ons-row height="200px">
+  <footer class="navbar navbar-expand-lg" style="background-color: #29323c;">
+  
+    <div class="footerpic"> <!--left-->
+      <img src="{%static '로고왕.png'%}" height="40rem" alt="로고">
+    </div>
+  
+    <div class="footer"> <!--right-->
+    <p>주식회사 포인테리어 대표이사: 김영애
+    주소: 경기도 수원시 영통구 매영로230
+    상담전화: 211-1044
+    공식블로그: blog.naver.com/lg1044</p>
+  
+    </div>
+  
+  
 
-    <ons-col>
-    <a href="{% url 'bed'%}">
-      <button type="button" class="btn btn-outline-dark">
-        <i class="far fa-building fa-3x"></i>
-        20PY
-      </button>
-    <a>
-    </ons-col>
-    <ons-col>
-    <a href="{% url 'bath'%}">
-      <button type="button" class="btn btn-outline-dark">
-        <i class="far fa-building fa-3x"></i>
-        30PY
-      </button>
-    </a>
-    </ons-col>
-    <ons-col>
-    <a href="{% url 'livingroom'%}">
-      <button type="button" class="btn btn-outline-dark">
-        <i class="far fa-building fa-3x"></i>
-        40PY
-      </button>
-    </a>
-    </ons-col>
-
-  </ons-row>
-
-</div>
-</div>
-
+  
+  </footer>
+  
 </body>

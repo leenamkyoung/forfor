@@ -293,19 +293,12 @@ button:hover:before,button:hover:after{
   }
 
   .footer{
-    display:block;
     color:white;
-  
-    line-height:70%;
+    height:2rem;
+    margin-top:1.5rem;
   }
   .footer p{
-    font-size: 0.85rem;
-    font-family: 'NanumBarunpen';
-    line-height:0.6em
-  }
-  .footerpic img{
-    align:right;
-    float: right;
+    font-size: 0.9rem;
   }
 
 </style>
@@ -678,24 +671,16 @@ infowindow.open(map, marker);
 
 <!--footer-->
 
-<footer class="navbar navbar-expand-lg navbar-fixed-top navbar-light" style="background-color: #29323c;">
-  <div class="footer" >
-  <br>
-  <br>
-  <br>
-  <p>주식회사 포인테리어 대표이사: 김영애</p>
-  <p>주소: 경기도 수원시 영통구 매영로230</p>
-  <p>상담전화: 211-1044</p>
-  <p>공식블로그: blog.naver.com/lg1044</p>
-  <br>
-  </div>
-
-  <div class="footerpic">
-    <img src="{%static '로고왕.png'%}" height="50rem" alt="로고">
-  </div>
-  <br>
-
-</footer>
+  <footer class="navbar navbar-expand-lg" style="background-color: #29323c;">
+  
+    <div class="footerpic"> <!--left-->
+      <img src="{%static '로고왕.png'%}" height="50rem" alt="로고">
+    </div>
+  
+    <div class="footer"> <!--right-->
+    <p>(주) 포인테리어 대표이사 김영애  (우) 경기도 수원시 영통구 매영로230  (Phone) 211-1044  (Blog) blog.naver.com/lg1044</p>
+    </div>
+  </footer>
 
 
 <!--footer 끝-->
