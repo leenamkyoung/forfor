@@ -26,7 +26,6 @@ import py.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',fi.views.home, name="home"),
-    path('aaa',fi.views.aaa, name="aaa"),
     path('bed/', part.views.bed, name="bed"),
     path('bath/', part.views.bath, name="bath"),
     path('door/', part.views.door, name="door"),

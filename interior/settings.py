@@ -24,7 +24,10 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY','vadzo+k79ac@x6byni57&ar$+ns3t&r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'localhost',
+    '.ap-northeast-2.compute.amazonaws.com',
+]
 
 
 # Application definition
