@@ -27,6 +27,7 @@ DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 ALLOWED_HOSTS = [
     'localhost',
     '.ap-northeast-2.compute.amazonaws.com',
+    'floating-plains-88319.herokuapp.com',
 ]
 
 
