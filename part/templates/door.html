@@ -304,28 +304,110 @@
 
 <!--suv-nav the end-->
 
+
 <div class="container">
-<div class="row">
+  <div class="row">
 
-<!--카드-->
-{% for door in doors.all %}
-<div class="open">
-    <a href="#{{door.id}}" class="open_btn">
-        <img src="{{ door.image.url }}" width="100%" height="320" position="absolute">
-    </a>
+  <!--card -1-->
+    <div class="open">
+      <a href="#1" class="open_btn">
+      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FcAzFPX%2FbtqykOtofl9%2FHWaBaWTecODFGk3kvtk9Lk%2Fimg.jpg" width="100%" height="320" position="absolute">
+      </a>
+    </div>
+  <!--card -1 popup-->
+    <div class="popup" id="1">
+      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FcAzFPX%2FbtqykOtofl9%2FHWaBaWTecODFGk3kvtk9Lk%2Fimg.jpg" alt="사진" width="100%" height="500px">
+      <a href="#a" class="closebtn"><img src="{% static 'close.png' %}" height="50"></a>
+    </div>
+
+  <!--card -2-->
+    <div class="open">
+      <a href="#2" class="open_btn">
+      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FVQMID%2FbtqymMVVsGX%2FgM5eB2QiXuSu8LyXk8G3gK%2Fimg.jpg" width="100%" height="320" position="absolute">
+      </a>
+    </div>
+  <!--card -2 popup-->
+    <div class="popup" id="2">
+      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FVQMID%2FbtqymMVVsGX%2FgM5eB2QiXuSu8LyXk8G3gK%2Fimg.jpg" alt="사진" width="100%" height="500px">
+      <a href="#a" class="closebtn"><img src="{% static 'close.png' %}" height="50"></a>
+    </div>
+
+  <!--card -3-->
+    <div class="open">
+      <a href="#3" class="open_btn">
+      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fkz8CC%2Fbtqyj4KfWXs%2F77Ig4O7E3mMmCjcsN0exS0%2Fimg.jpg" width="100%" height="320" position="absolute">
+      </a>
+    </div>
+  <!--card -3 popup-->
+    <div class="popup" id="3">
+      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fkz8CC%2Fbtqyj4KfWXs%2F77Ig4O7E3mMmCjcsN0exS0%2Fimg.jpg" alt="사진" width="100%" height="500px">
+      <a href="#a" class="closebtn"><img src="{% static 'close.png' %}" height="50"></a>
+    </div>
+
+  <!--card -4-->
+    <div class="open">
+      <a href="#4" class="open_btn">
+      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FuUpK6%2Fbtqyna26nGI%2FNeWv7WkRZNWPcciLwEwvKk%2Fimg.jpg" width="100%" height="320" position="absolute">
+      </a>
+    </div>
+  <!--card -4 popup-->
+    <div class="popup" id="4">
+      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FuUpK6%2Fbtqyna26nGI%2FNeWv7WkRZNWPcciLwEwvKk%2Fimg.jpg" alt="사진" width="100%" height="500px">
+      <a href="#a" class="closebtn"><img src="{% static 'close.png' %}" height="50"></a>
+    </div>
+  
+  <!--card -5-->
+    <div class="open">
+      <a href="#5" class="open_btn">
+      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FQE45F%2FbtqymTHi5sB%2FnbsvIiC9ZVO7sIoB298Hbk%2Fimg.jpg" width="100%" height="320" position="absolute">
+      </a>
+    </div>
+  <!--card -5 popup-->
+    <div class="popup" id="5">
+      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FQE45F%2FbtqymTHi5sB%2FnbsvIiC9ZVO7sIoB298Hbk%2Fimg.jpg" alt="사진" width="100%" height="500px">
+      <a href="#a" class="closebtn"><img src="{% static 'close.png' %}" height="50"></a>
+    </div>
+
+  <!--card -6-->
+    <div class="open">
+      <a href="#6" class="open_btn">
+      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FdNzSLa%2FbtqyjdglKvq%2FF29mimJrcFKOywBU4Inqzk%2Fimg.jpg" width="100%" height="320" position="absolute">
+      </a>
+    </div>
+  <!--card -6 popup-->
+    <div class="popup" id="6">
+      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FdNzSLa%2FbtqyjdglKvq%2FF29mimJrcFKOywBU4Inqzk%2Fimg.jpg" alt="사진" width="100%" height="500px">
+      <a href="#a" class="closebtn"><img src="{% static 'close.png' %}" height="50"></a>
+    </div>
+
+  <!--card -7-->
+    <div class="open">
+      <a href="#7" class="open_btn">
+      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2F5W9JS%2FbtqykxZIE9i%2FZngcu03QjlXik4CwXcOej0%2Fimg.jpg" width="100%" height="320" position="absolute">
+      </a>
+    </div>
+  <!--card -7 popup-->
+    <div class="popup" id="7">
+      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2F5W9JS%2FbtqykxZIE9i%2FZngcu03QjlXik4CwXcOej0%2Fimg.jpg" alt="사진" width="100%" height="500px">
+      <a href="#a" class="closebtn"><img src="{% static 'close.png' %}" height="50"></a>
+    </div>
+
+  <!--card -8-->
+    <div class="open">
+      <a href="#8" class="open_btn">
+      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FMFwUe%2FbtqyizKKasY%2FDfp7MJ0xETaxDnsycC69Q1%2Fimg.jpg" width="100%" height="320" position="absolute">
+      </a>
+    </div>
+  <!--card -8 popup-->
+    <div class="popup" id="8">
+      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FMFwUe%2FbtqyizKKasY%2FDfp7MJ0xETaxDnsycC69Q1%2Fimg.jpg" alt="사진" width="100%" height="500px">
+      <a href="#a" class="closebtn"><img src="{% static 'close.png' %}" height="50"></a>
+    </div>
+
+  </div>
 </div>
 
-<!--확대됨-->
-<div class="popup" id="{{door.id}}">
-  <img src="{{ door.image.url }}" width="100%" height="500px">
-  <a href="#a" class="closebtn"><img src="{% static 'close.png' %}" height="50"></a>
-</div>
-{%endfor%}
-
-</div>
-</div>
 
 <br><br>
-
 </body>
 

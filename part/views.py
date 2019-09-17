@@ -6,7 +6,6 @@ from .models import Kitchen
 from .models import Door
 from .models import Dressroom
 
-
 def bed(request):
     bed = Bed.objects
     return render(request, 'bed.html', {'beds':bed})
