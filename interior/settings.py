@@ -28,6 +28,9 @@ ALLOWED_HOSTS = [
     'localhost',
     '.ap-northeast-2.compute.amazonaws.com',
     'floating-plains-88319.herokuapp.com',
+    '127.0.0.1'
+    'for-interior.com',
+    'for-interior.herokuapp.com',
 ]
 
 
